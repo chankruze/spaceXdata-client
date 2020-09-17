@@ -1,0 +1,144 @@
+.App-logo {
+  width: 300px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.launch-wrapper {
+  padding: 5px 0px 5px 0px;
+  display: flex;
+  overflow-x: auto;
+  flex-direction: row;
+}
+
+.card {
+  flex: 0 0 28% !important;
+  max-width: 28%;
+  margin-right: 10px;
+  letter-spacing: normal;
+  margin-bottom: 0px;
+  border: 0;
+}
+
+.card-body {
+  font-weight: 600;
+  padding-bottom: 0px;
+  background: rgb(245, 245, 245);
+}
+
+.card-body h6 {
+  text-transform: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.card-body span {
+  font-weight: 500;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.card-img-top {
+  padding: 20px 30px 20px 30px;
+  max-height: 276px;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-header {
+  border: 0;
+}
+
+.card-header.success {
+  background: #026d02;
+}
+
+.card-header.failure {
+  background: #f00;
+}
+
+.card-link {
+  color: rgb(0, 89, 255);
+}
+
+.card h6 span {
+  font-size: normal;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border-top: 0;
+  justify-content: center;
+}
+
+.card-footer .btn-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-footer .btn-row a {
+  flex: auto;
+  width: 100%;
+}
+
+.card .btn.more {
+  float: right;
+}
+
+/* width */
+.launch-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+/* Track */
+.launch-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.launch-wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.launch-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body:after {
+  content: "beta";
+  position: fixed;
+  width: 80px;
+  height: 25px;
+  background: #000000;
+  top: 7px;
+  left: -20px;
+  text-align: center;
+  font-size: 13px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  line-height: 27px;
+  transform: rotate(-45deg);
+}
+
+.card:hover .card-img-top {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
